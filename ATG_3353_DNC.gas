@@ -1,0 +1,1168 @@
+Program.Sub.ScreenSU.Start
+gui.Login..create
+gui.Login..caption("DNC Login")
+gui.Login..size(4170,2670)
+gui.Login..position(0,0)
+gui.Login..event(unload,login_unload)
+gui.Login..alwaysontop(False)
+gui.Login..fontname("Arial")
+gui.Login..fontsize(8)
+gui.Login..forecolor(0)
+gui.Login..fontstyle(,,,,)
+gui.Login..BackColor(-2147483633)
+gui.Login..controlbox(True)
+gui.Login..maxbutton(False)
+gui.Login..minbutton(False)
+gui.Login..mousepointer(0)
+gui.Login..moveable(True)
+gui.Login..sizeable(False)
+gui.Login..ShowInTaskBar(True)
+gui.Login..titlebar(True)
+gui.Login.login.create(frame)
+gui.Login.login.caption("")
+gui.Login.login.size(3555,1785)
+gui.Login.login.position(200,200)
+gui.Login.login.visible(True)
+gui.Login.login.fontname("Arial")
+gui.Login.login.fontsize(8)
+gui.Login.cmdLogin.create(button)
+gui.Login.cmdLogin.caption("Login")
+gui.Login.cmdLogin.visible(True)
+gui.Login.cmdLogin.size(855,375)
+gui.Login.cmdLogin.zorder(0)
+gui.Login.cmdLogin.position(1385,1300)
+gui.Login.cmdLogin.enabled(True)
+gui.Login.cmdLogin.parent("login")
+gui.Login.cmdLogin.fontname("Arial")
+gui.Login.cmdLogin.fontsize(8)
+gui.Login.cmdLogin.event(click,cmdlogin_click)
+gui.Login.lbl1.create(label)
+gui.Login.lbl1.caption("User:")
+gui.Login.lbl1.backstyle(0)
+gui.Login.lbl1.visible(True)
+gui.Login.lbl1.size(405,255)
+gui.Login.lbl1.zorder(1)
+gui.Login.lbl1.position(200,470)
+gui.Login.lbl1.enabled(True)
+gui.Login.lbl1.alignment(0)
+gui.Login.lbl1.parent("login")
+gui.Login.lbl1.fontname("Arial")
+gui.Login.lbl1.fontsize(8)
+gui.Login.lbl1.BackColor(-2147483633)
+gui.Login.txtpassword.create(textbox)
+gui.Login.txtpassword.text("")
+gui.Login.txtpassword.visible(True)
+gui.Login.txtpassword.size(1365,300)
+gui.Login.txtpassword.zorder(0)
+gui.Login.txtpassword.position(1135,870)
+gui.Login.txtpassword.enabled(True)
+gui.Login.txtpassword.alignment(0)
+gui.Login.txtpassword.parent("login")
+gui.Login.txtpassword.fontname("Arial")
+gui.Login.txtpassword.fontsize(8)
+gui.Login.txtpassword.event(keypress,txtpassword_keypress)
+gui.Login.txtpassword.BackColor(-2147483643)
+gui.Login.lbl2.create(label)
+gui.Login.lbl2.caption("Password:")
+gui.Login.lbl2.backstyle(0)
+gui.Login.lbl2.visible(True)
+gui.Login.lbl2.size(810,255)
+gui.Login.lbl2.zorder(1)
+gui.Login.lbl2.position(200,935)
+gui.Login.lbl2.enabled(True)
+gui.Login.lbl2.alignment(0)
+gui.Login.lbl2.parent("login")
+gui.Login.lbl2.fontname("Arial")
+gui.Login.lbl2.fontsize(8)
+gui.Login.lbl2.BackColor(-2147483633)
+gui.Login.txtUser.create(textbox)
+gui.Login.txtUser.text("")
+gui.Login.txtUser.visible(True)
+gui.Login.txtUser.size(1365,300)
+gui.Login.txtUser.zorder(0)
+gui.Login.txtUser.position(1160,425)
+gui.Login.txtUser.enabled(True)
+gui.Login.txtUser.alignment(0)
+gui.Login.txtUser.parent("login")
+gui.Login.txtUser.fontname("Arial")
+gui.Login.txtUser.fontsize(8)
+gui.Login.txtUser.BackColor(-2147483643)
+gui.Login.txtUser.tabstop(True)
+gui.Login.txtUser.tabindex(1)
+gui.Login.txtpassword.tabstop(True)
+gui.Login.txtpassword.tabindex(2)
+gui.Login.cmdLogin.tabstop(True)
+gui.Login.cmdLogin.tabindex(3)
+
+
+gui.Workcenter..create
+gui.Workcenter..caption("Choose Workcenter")
+gui.Workcenter..size(5340,2265)
+gui.Workcenter..position(0,0)
+gui.Workcenter..event(unload,workcenter_unload)
+gui.Workcenter..alwaysontop(False)
+gui.Workcenter..fontname("Arial")
+gui.Workcenter..fontsize(8)
+gui.Workcenter..forecolor(0)
+gui.Workcenter..fontstyle(,,,,)
+gui.Workcenter..BackColor(-2147483633)
+gui.Workcenter..controlbox(True)
+gui.Workcenter..maxbutton(False)
+gui.Workcenter..minbutton(True)
+gui.Workcenter..mousepointer(0)
+gui.Workcenter..moveable(True)
+gui.Workcenter..sizeable(False)
+gui.Workcenter..ShowInTaskBar(True)
+gui.Workcenter..titlebar(True)
+gui.Workcenter.wc.create(frame)
+gui.Workcenter.wc.caption("Workcenter:")
+gui.Workcenter.wc.size(4830,1050)
+gui.Workcenter.wc.position(200,425)
+gui.Workcenter.wc.visible(True)
+gui.Workcenter.wc.fontname("Arial")
+gui.Workcenter.wc.fontsize(8)
+gui.Workcenter.lbluser.create(label)
+gui.Workcenter.lbluser.caption("User")
+gui.Workcenter.lbluser.backstyle(0)
+gui.Workcenter.lbluser.visible(True)
+gui.Workcenter.lbluser.size(1935,255)
+gui.Workcenter.lbluser.zorder(1)
+gui.Workcenter.lbluser.position(285,115)
+gui.Workcenter.lbluser.enabled(True)
+gui.Workcenter.lbluser.alignment(0)
+gui.Workcenter.lbluser.fontname("Arial")
+gui.Workcenter.lbluser.fontsize(8)
+gui.Workcenter.lbluser.BackColor(-2147483633)
+gui.Workcenter.ddwc.create(dropdownlist)
+gui.Workcenter.ddwc.visible(True)
+gui.Workcenter.ddwc.size(3510,330)
+gui.Workcenter.ddwc.zorder(0)
+gui.Workcenter.ddwc.position(200,400)
+gui.Workcenter.ddwc.enabled(True)
+gui.Workcenter.ddwc.parent("wc")
+gui.Workcenter.ddwc.fontname("Arial")
+gui.Workcenter.ddwc.fontsize(8)
+gui.Workcenter.cmdView.create(button)
+gui.Workcenter.cmdView.caption("View")
+gui.Workcenter.cmdView.visible(True)
+gui.Workcenter.cmdView.size(855,375)
+gui.Workcenter.cmdView.zorder(0)
+gui.Workcenter.cmdView.position(3795,370)
+gui.Workcenter.cmdView.enabled(True)
+gui.Workcenter.cmdView.parent("wc")
+gui.Workcenter.cmdView.fontname("Arial")
+gui.Workcenter.cmdView.fontsize(8)
+gui.Workcenter.cmdView.event(click,cmdview_click)
+gui.Workcenter.ddwc.tabstop(True)
+gui.Workcenter.ddwc.tabindex(1)
+gui.Workcenter.cmdView.tabstop(True)
+gui.Workcenter.cmdView.tabindex(2)
+
+
+gui.DNC..create
+gui.DNC..caption("DNC File Number List")
+gui.DNC..size(15210,6285)
+gui.DNC..position(0,0)
+gui.DNC..event(resize,dnc_resize)
+gui.DNC..event(unload,dnc_unload)
+gui.DNC..alwaysontop(False)
+gui.DNC..fontname("Arial")
+gui.DNC..fontsize(8)
+gui.DNC..forecolor(0)
+gui.DNC..fontstyle(,,,,)
+gui.DNC..BackColor(-2147483633)
+gui.DNC..controlbox(True)
+gui.DNC..maxbutton(True)
+gui.DNC..minbutton(True)
+gui.DNC..mousepointer(0)
+gui.DNC..moveable(True)
+gui.DNC..sizeable(True)
+gui.DNC..ShowInTaskBar(True)
+gui.DNC..titlebar(True)
+gui.DNC.frameTool.create(frame)
+gui.DNC.frameTool.caption("")
+gui.DNC.frameTool.size(14730,915)
+gui.DNC.frameTool.position(115,0)
+gui.DNC.frameTool.visible(True)
+gui.DNC.frameTool.fontname("Arial")
+gui.DNC.frameTool.fontsize(8)
+gui.DNC.gsDNC.create(gsflexgrid)
+gui.DNC.gsDNC.FixedRows(0)
+gui.DNC.gsDNC.FixedCols(0)
+gui.DNC.gsDNC.visible(True)
+gui.DNC.gsDNC.size(14760,4575)
+gui.DNC.gsDNC.zorder(0)
+gui.DNC.gsDNC.position(135,1000)
+gui.DNC.gsDNC.enabled(True)
+gui.DNC.gsDNC.event(commandclick,gsDNC_commandclick)
+gui.DNC.lblUser.create(label)
+gui.DNC.lblUser.caption("User")
+gui.DNC.lblUser.backstyle(0)
+gui.DNC.lblUser.visible(True)
+gui.DNC.lblUser.size(1935,255)
+gui.DNC.lblUser.zorder(1)
+gui.DNC.lblUser.position(4200,375)
+gui.DNC.lblUser.enabled(True)
+gui.DNC.lblUser.alignment(0)
+gui.DNC.lblUser.parent("frametool")
+gui.DNC.lblUser.fontname("Arial")
+gui.DNC.lblUser.fontsize(8)
+gui.DNC.lblUser.BackColor(-2147483633)
+gui.DNC.lblWC.create(label)
+gui.DNC.lblWC.caption("WC")
+gui.DNC.lblWC.backstyle(0)
+gui.DNC.lblWC.visible(True)
+gui.DNC.lblWC.size(1935,315)
+gui.DNC.lblWC.zorder(1)
+gui.DNC.lblWC.position(100,450)
+gui.DNC.lblWC.enabled(True)
+gui.DNC.lblWC.alignment(0)
+gui.DNC.lblWC.parent("frametool")
+gui.DNC.lblWC.fontname("Arial")
+gui.DNC.lblWC.fontsize(18)
+gui.DNC.lblWC.BackColor(-2147483633)
+gui.DNC.cmdFind.create(button)
+gui.DNC.cmdFind.caption("Find")
+gui.DNC.cmdFind.visible(True)
+gui.DNC.cmdFind.size(855,375)
+gui.DNC.cmdFind.zorder(0)
+gui.DNC.cmdFind.position(12610,300)
+gui.DNC.cmdFind.enabled(True)
+gui.DNC.cmdFind.parent("frametool")
+gui.DNC.cmdFind.fontname("Arial")
+gui.DNC.cmdFind.fontsize(8)
+gui.DNC.cmdFind.event(click,cmdfind_click)
+gui.DNC.cmdNew.create(button)
+gui.DNC.cmdNew.caption("New")
+gui.DNC.cmdNew.visible(True)
+gui.DNC.cmdNew.size(840,375)
+gui.DNC.cmdNew.zorder(0)
+gui.DNC.cmdNew.position(11615,300)
+gui.DNC.cmdNew.enabled(True)
+gui.DNC.cmdNew.parent("frametool")
+gui.DNC.cmdNew.fontname("Arial")
+gui.DNC.cmdNew.fontsize(8)
+gui.DNC.cmdNew.event(click,cmdnew_click)
+gui.DNC.lbl3.create(label)
+gui.DNC.lbl3.caption("User:")
+gui.DNC.lbl3.backstyle(0)
+gui.DNC.lbl3.visible(True)
+gui.DNC.lbl3.size(390,255)
+gui.DNC.lbl3.zorder(1)
+gui.DNC.lbl3.position(3700,375)
+gui.DNC.lbl3.enabled(True)
+gui.DNC.lbl3.alignment(0)
+gui.DNC.lbl3.parent("frametool")
+gui.DNC.lbl3.fontname("Arial")
+gui.DNC.lbl3.fontsize(8)
+gui.DNC.lbl3.BackColor(-2147483633)
+gui.DNC.cmdReset.create(button)
+gui.DNC.cmdReset.caption("Reset")
+gui.DNC.cmdReset.visible(True)
+gui.DNC.cmdReset.size(855,375)
+gui.DNC.cmdReset.zorder(0)
+gui.DNC.cmdReset.position(13670,305)
+gui.DNC.cmdReset.enabled(True)
+gui.DNC.cmdReset.parent("frametool")
+gui.DNC.cmdReset.fontname("Arial")
+gui.DNC.cmdReset.fontsize(8)
+gui.DNC.cmdReset.event(click,cmdreset_click)
+gui.DNC.lbl4.create(label)
+gui.DNC.lbl4.caption("Loading...")
+gui.DNC.lbl4.backstyle(0)
+gui.DNC.lbl4.visible(True)
+gui.DNC.lbl4.size(2925,840)
+gui.DNC.lbl4.zorder(1)
+gui.DNC.lbl4.position(3200,2500)
+gui.DNC.lbl4.enabled(True)
+gui.DNC.lbl4.alignment(0)
+gui.DNC.lbl4.fontname("Arial")
+gui.DNC.lbl4.fontsize(26)
+gui.DNC.lbl4.BackColor(-2147483633)
+gui.DNC.lbl5.create(label)
+gui.DNC.lbl5.caption("Workcenter")
+gui.DNC.lbl5.backstyle(0)
+gui.DNC.lbl5.visible(True)
+gui.DNC.lbl5.size(1935,255)
+gui.DNC.lbl5.zorder(1)
+gui.DNC.lbl5.position(110,200)
+gui.DNC.lbl5.enabled(True)
+gui.DNC.lbl5.alignment(0)
+gui.DNC.lbl5.parent("frametool")
+gui.DNC.lbl5.fontname("Arial")
+gui.DNC.lbl5.fontsize(8)
+gui.DNC.lbl5.BackColor(-2147483633)
+gui.DNC.cmdNew.tabstop(True)
+gui.DNC.cmdNew.tabindex(1)
+gui.DNC.cmdFind.tabstop(True)
+gui.DNC.cmdFind.tabindex(2)
+gui.DNC.cmdReset.tabstop(True)
+gui.DNC.cmdReset.tabindex(3)
+
+
+gui.EditDNC..create
+gui.EditDNC..caption("Edit DNC")
+gui.EditDNC..size(6885,3495)
+gui.EditDNC..position(0,0)
+gui.EditDNC..event(unload,editdnc_unload)
+gui.EditDNC..alwaysontop(True)
+gui.EditDNC..fontname("Arial")
+gui.EditDNC..fontsize(8)
+gui.EditDNC..forecolor(0)
+gui.EditDNC..fontstyle(,,,,)
+gui.EditDNC..BackColor(-2147483633)
+gui.EditDNC..controlbox(True)
+gui.EditDNC..maxbutton(False)
+gui.EditDNC..minbutton(False)
+gui.EditDNC..mousepointer(0)
+gui.EditDNC..moveable(True)
+gui.EditDNC..sizeable(False)
+gui.EditDNC..ShowInTaskBar(True)
+gui.EditDNC..titlebar(True)
+gui.EditDNC.frameDNC.create(frame)
+gui.EditDNC.frameDNC.caption("")
+gui.EditDNC.frameDNC.size(6345,1590)
+gui.EditDNC.frameDNC.position(135,675)
+gui.EditDNC.frameDNC.visible(True)
+gui.EditDNC.frameDNC.fontname("Arial")
+gui.EditDNC.frameDNC.fontsize(8)
+gui.EditDNC.frameTool.create(frame)
+gui.EditDNC.frameTool.caption("")
+gui.EditDNC.frameTool.size(3030,660)
+gui.EditDNC.frameTool.position(3440,2285)
+gui.EditDNC.frameTool.visible(True)
+gui.EditDNC.frameTool.fontname("Arial")
+gui.EditDNC.frameTool.fontsize(8)
+gui.EditDNC.lblWC.create(label)
+gui.EditDNC.lblWC.caption("WC")
+gui.EditDNC.lblWC.backstyle(0)
+gui.EditDNC.lblWC.visible(True)
+gui.EditDNC.lblWC.size(1770,330)
+gui.EditDNC.lblWC.zorder(1)
+gui.EditDNC.lblWC.position(200,275)
+gui.EditDNC.lblWC.enabled(True)
+gui.EditDNC.lblWC.alignment(0)
+gui.EditDNC.lblWC.fontname("Arial")
+gui.EditDNC.lblWC.fontsize(14)
+gui.EditDNC.lblWC.BackColor(-2147483633)
+gui.EditDNC.lblFileno.create(label)
+gui.EditDNC.lblFileno.caption("Fileno")
+gui.EditDNC.lblFileno.backstyle(0)
+gui.EditDNC.lblFileno.visible(True)
+gui.EditDNC.lblFileno.size(2700,270)
+gui.EditDNC.lblFileno.zorder(1)
+gui.EditDNC.lblFileno.position(1900,245)
+gui.EditDNC.lblFileno.enabled(True)
+gui.EditDNC.lblFileno.alignment(0)
+gui.EditDNC.lblFileno.fontname("Arial")
+gui.EditDNC.lblFileno.fontsize(14)
+gui.EditDNC.lblFileno.BackColor(-2147483633)
+gui.EditDNC.txtOpp.create(textbox)
+gui.EditDNC.txtOpp.text("")
+gui.EditDNC.txtOpp.visible(True)
+gui.EditDNC.txtOpp.size(1215,300)
+gui.EditDNC.txtOpp.zorder(0)
+gui.EditDNC.txtOpp.position(90,465)
+gui.EditDNC.txtOpp.enabled(True)
+gui.EditDNC.txtOpp.alignment(0)
+gui.EditDNC.txtOpp.parent("framednc")
+gui.EditDNC.txtOpp.fontname("Arial")
+gui.EditDNC.txtOpp.fontsize(8)
+gui.EditDNC.txtOpp.maxLength(10)
+gui.EditDNC.txtOpp.BackColor(-2147483643)
+gui.EditDNC.txtProgram.create(textbox)
+gui.EditDNC.txtProgram.text("")
+gui.EditDNC.txtProgram.visible(True)
+gui.EditDNC.txtProgram.size(1215,255)
+gui.EditDNC.txtProgram.zorder(0)
+gui.EditDNC.txtProgram.position(1500,500)
+gui.EditDNC.txtProgram.enabled(True)
+gui.EditDNC.txtProgram.alignment(0)
+gui.EditDNC.txtProgram.parent("framednc")
+gui.EditDNC.txtProgram.fontname("Arial")
+gui.EditDNC.txtProgram.fontsize(8)
+gui.EditDNC.txtProgram.maxLength(30)
+gui.EditDNC.txtProgram.BackColor(-2147483643)
+gui.EditDNC.txtCustNo.create(textbox)
+gui.EditDNC.txtCustNo.text("")
+gui.EditDNC.txtCustNo.visible(True)
+gui.EditDNC.txtCustNo.size(1215,300)
+gui.EditDNC.txtCustNo.zorder(0)
+gui.EditDNC.txtCustNo.position(2900,500)
+gui.EditDNC.txtCustNo.enabled(True)
+gui.EditDNC.txtCustNo.alignment(0)
+gui.EditDNC.txtCustNo.parent("framednc")
+gui.EditDNC.txtCustNo.fontname("Arial")
+gui.EditDNC.txtCustNo.fontsize(8)
+gui.EditDNC.txtCustNo.maxLength(30)
+gui.EditDNC.txtCustNo.BackColor(-2147483643)
+gui.EditDNC.txtPart.create(textbox)
+gui.EditDNC.txtPart.text("")
+gui.EditDNC.txtPart.visible(True)
+gui.EditDNC.txtPart.size(1890,300)
+gui.EditDNC.txtPart.zorder(0)
+gui.EditDNC.txtPart.position(95,1085)
+gui.EditDNC.txtPart.enabled(True)
+gui.EditDNC.txtPart.alignment(0)
+gui.EditDNC.txtPart.parent("framednc")
+gui.EditDNC.txtPart.fontname("Arial")
+gui.EditDNC.txtPart.fontsize(8)
+gui.EditDNC.txtPart.maxLength(30)
+gui.EditDNC.txtPart.BackColor(-2147483643)
+gui.EditDNC.txtDesc.create(textbox)
+gui.EditDNC.txtDesc.text("")
+gui.EditDNC.txtDesc.visible(True)
+gui.EditDNC.txtDesc.size(3780,300)
+gui.EditDNC.txtDesc.zorder(0)
+gui.EditDNC.txtDesc.position(2400,1085)
+gui.EditDNC.txtDesc.enabled(True)
+gui.EditDNC.txtDesc.alignment(0)
+gui.EditDNC.txtDesc.parent("framednc")
+gui.EditDNC.txtDesc.fontname("Arial")
+gui.EditDNC.txtDesc.fontsize(8)
+gui.EditDNC.txtDesc.maxLength(30)
+gui.EditDNC.txtDesc.BackColor(-2147483643)
+gui.EditDNC.cmdCust.create(button)
+gui.EditDNC.cmdCust.caption("v")
+gui.EditDNC.cmdCust.visible(True)
+gui.EditDNC.cmdCust.size(270,255)
+gui.EditDNC.cmdCust.zorder(0)
+gui.EditDNC.cmdCust.position(4160,530)
+gui.EditDNC.cmdCust.enabled(True)
+gui.EditDNC.cmdCust.parent("framednc")
+gui.EditDNC.cmdCust.fontname("Arial")
+gui.EditDNC.cmdCust.fontsize(8)
+gui.EditDNC.cmdCust.event(click,cmdcust_click)
+gui.EditDNC.cmdPart.create(button)
+gui.EditDNC.cmdPart.caption("v")
+gui.EditDNC.cmdPart.visible(True)
+gui.EditDNC.cmdPart.size(270,255)
+gui.EditDNC.cmdPart.zorder(0)
+gui.EditDNC.cmdPart.position(2030,1115)
+gui.EditDNC.cmdPart.enabled(True)
+gui.EditDNC.cmdPart.parent("framednc")
+gui.EditDNC.cmdPart.fontname("Arial")
+gui.EditDNC.cmdPart.fontsize(8)
+gui.EditDNC.cmdPart.event(click,cmdpart_click)
+gui.EditDNC.cmdSave.create(button)
+gui.EditDNC.cmdSave.caption("Save")
+gui.EditDNC.cmdSave.visible(True)
+gui.EditDNC.cmdSave.size(855,375)
+gui.EditDNC.cmdSave.zorder(0)
+gui.EditDNC.cmdSave.position(110,200)
+gui.EditDNC.cmdSave.enabled(True)
+gui.EditDNC.cmdSave.parent("frametool")
+gui.EditDNC.cmdSave.fontname("Arial")
+gui.EditDNC.cmdSave.fontsize(8)
+gui.EditDNC.cmdSave.event(click,cmdsave_click)
+gui.EditDNC.cmdClear.create(button)
+gui.EditDNC.cmdClear.caption("Clear")
+gui.EditDNC.cmdClear.visible(True)
+gui.EditDNC.cmdClear.size(855,375)
+gui.EditDNC.cmdClear.zorder(0)
+gui.EditDNC.cmdClear.position(1055,200)
+gui.EditDNC.cmdClear.enabled(True)
+gui.EditDNC.cmdClear.parent("frametool")
+gui.EditDNC.cmdClear.fontname("Arial")
+gui.EditDNC.cmdClear.fontsize(8)
+gui.EditDNC.cmdClear.event(click,cmdclear_click)
+gui.EditDNC.lblOpp.create(label)
+gui.EditDNC.lblOpp.caption("Opp")
+gui.EditDNC.lblOpp.backstyle(0)
+gui.EditDNC.lblOpp.visible(True)
+gui.EditDNC.lblOpp.size(975,255)
+gui.EditDNC.lblOpp.zorder(1)
+gui.EditDNC.lblOpp.position(185,200)
+gui.EditDNC.lblOpp.enabled(True)
+gui.EditDNC.lblOpp.alignment(0)
+gui.EditDNC.lblOpp.parent("framednc")
+gui.EditDNC.lblOpp.fontname("Arial")
+gui.EditDNC.lblOpp.fontsize(8)
+gui.EditDNC.lblOpp.BackColor(-2147483633)
+gui.EditDNC.lbl4.create(label)
+gui.EditDNC.lbl4.caption("Program")
+gui.EditDNC.lbl4.backstyle(0)
+gui.EditDNC.lbl4.visible(True)
+gui.EditDNC.lbl4.size(975,255)
+gui.EditDNC.lbl4.zorder(1)
+gui.EditDNC.lbl4.position(1610,200)
+gui.EditDNC.lbl4.enabled(True)
+gui.EditDNC.lbl4.alignment(0)
+gui.EditDNC.lbl4.parent("framednc")
+gui.EditDNC.lbl4.fontname("Arial")
+gui.EditDNC.lbl4.fontsize(8)
+gui.EditDNC.lbl4.BackColor(-2147483633)
+gui.EditDNC.lbl5.create(label)
+gui.EditDNC.lbl5.caption("CustNo")
+gui.EditDNC.lbl5.backstyle(0)
+gui.EditDNC.lbl5.visible(True)
+gui.EditDNC.lbl5.size(1155,255)
+gui.EditDNC.lbl5.zorder(1)
+gui.EditDNC.lbl5.position(2960,215)
+gui.EditDNC.lbl5.enabled(True)
+gui.EditDNC.lbl5.alignment(0)
+gui.EditDNC.lbl5.parent("framednc")
+gui.EditDNC.lbl5.fontname("Arial")
+gui.EditDNC.lbl5.fontsize(8)
+gui.EditDNC.lbl5.BackColor(-2147483633)
+gui.EditDNC.lbl6.create(label)
+gui.EditDNC.lbl6.caption("Drawing/Part")
+gui.EditDNC.lbl6.backstyle(0)
+gui.EditDNC.lbl6.visible(True)
+gui.EditDNC.lbl6.size(1725,255)
+gui.EditDNC.lbl6.zorder(1)
+gui.EditDNC.lbl6.position(170,845)
+gui.EditDNC.lbl6.enabled(True)
+gui.EditDNC.lbl6.alignment(0)
+gui.EditDNC.lbl6.parent("framednc")
+gui.EditDNC.lbl6.fontname("Arial")
+gui.EditDNC.lbl6.fontsize(8)
+gui.EditDNC.lbl6.BackColor(-2147483633)
+gui.EditDNC.lbl7.create(label)
+gui.EditDNC.lbl7.caption("Description")
+gui.EditDNC.lbl7.backstyle(0)
+gui.EditDNC.lbl7.visible(True)
+gui.EditDNC.lbl7.size(1935,255)
+gui.EditDNC.lbl7.zorder(1)
+gui.EditDNC.lbl7.position(2445,845)
+gui.EditDNC.lbl7.enabled(True)
+gui.EditDNC.lbl7.alignment(0)
+gui.EditDNC.lbl7.parent("framednc")
+gui.EditDNC.lbl7.fontname("Arial")
+gui.EditDNC.lbl7.fontsize(8)
+gui.EditDNC.lbl7.BackColor(-2147483633)
+gui.EditDNC.txtCustomer.create(textbox)
+gui.EditDNC.txtCustomer.text("")
+gui.EditDNC.txtCustomer.visible(True)
+gui.EditDNC.txtCustomer.size(1695,300)
+gui.EditDNC.txtCustomer.zorder(0)
+gui.EditDNC.txtCustomer.position(4500,485)
+gui.EditDNC.txtCustomer.enabled(False)
+gui.EditDNC.txtCustomer.alignment(0)
+gui.EditDNC.txtCustomer.parent("framednc")
+gui.EditDNC.txtCustomer.fontname("Arial")
+gui.EditDNC.txtCustomer.fontsize(8)
+gui.EditDNC.txtCustomer.maxLength(30)
+gui.EditDNC.txtCustomer.BackColor(-2147483643)
+gui.EditDNC.lbl8.create(label)
+gui.EditDNC.lbl8.caption("Customer")
+gui.EditDNC.lbl8.backstyle(0)
+gui.EditDNC.lbl8.visible(True)
+gui.EditDNC.lbl8.size(1545,255)
+gui.EditDNC.lbl8.zorder(1)
+gui.EditDNC.lbl8.position(4530,215)
+gui.EditDNC.lbl8.enabled(True)
+gui.EditDNC.lbl8.alignment(0)
+gui.EditDNC.lbl8.parent("framednc")
+gui.EditDNC.lbl8.fontname("Arial")
+gui.EditDNC.lbl8.fontsize(8)
+gui.EditDNC.lbl8.BackColor(-2147483633)
+gui.EditDNC.lbl9.create(label)
+gui.EditDNC.lbl9.caption("File Number")
+gui.EditDNC.lbl9.backstyle(0)
+gui.EditDNC.lbl9.visible(True)
+gui.EditDNC.lbl9.size(1350,255)
+gui.EditDNC.lbl9.zorder(1)
+gui.EditDNC.lbl9.position(1940,5)
+gui.EditDNC.lbl9.enabled(True)
+gui.EditDNC.lbl9.alignment(0)
+gui.EditDNC.lbl9.fontname("Arial")
+gui.EditDNC.lbl9.fontsize(8)
+gui.EditDNC.lbl9.BackColor(-2147483633)
+gui.EditDNC.lbl10.create(label)
+gui.EditDNC.lbl10.caption("Workcenter")
+gui.EditDNC.lbl10.backstyle(0)
+gui.EditDNC.lbl10.visible(True)
+gui.EditDNC.lbl10.size(1935,255)
+gui.EditDNC.lbl10.zorder(1)
+gui.EditDNC.lbl10.position(215,15)
+gui.EditDNC.lbl10.enabled(True)
+gui.EditDNC.lbl10.alignment(0)
+gui.EditDNC.lbl10.fontname("Arial")
+gui.EditDNC.lbl10.fontsize(8)
+gui.EditDNC.lbl10.BackColor(-2147483633)
+gui.EditDNC.cmdDelete.create(button)
+gui.EditDNC.cmdDelete.caption("Delete")
+gui.EditDNC.cmdDelete.visible(True)
+gui.EditDNC.cmdDelete.size(855,375)
+gui.EditDNC.cmdDelete.zorder(0)
+gui.EditDNC.cmdDelete.position(2015,200)
+gui.EditDNC.cmdDelete.enabled(True)
+gui.EditDNC.cmdDelete.parent("frametool")
+gui.EditDNC.cmdDelete.fontname("Arial")
+gui.EditDNC.cmdDelete.event(click,cmddelete_click)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Hook 15760,15710,15755,15921
+
+'Bristol Machine DNC Number Application
+V.Global.User.Declare(String)
+V.Local.sSQL.Declare(String)
+
+F.Intrinsic.Control.iF(V.Caller.Hook,=,"15921")
+	V.Passed.000016.Set("DNC")
+	V.Passed.000020.Set("Setup Sheet")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.iF(V.Caller.Hook,=,"15755")
+	V.Passed.000016.Set("DNC")
+	V.Passed.000020.Set("Setup Sheet")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.iF(V.Caller.Hook,=,"15710")
+	V.Passed.000016.Set("DNC")
+	V.Passed.000020.Set("Setup Sheet")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+
+F.ODBC.Connection!conx.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+Gui.Login.txtPassword.PasswordChar("*")
+
+Gui.Login..Show
+
+'F.Intrinsic.String.Concat("Select ID from USER_FILE where COMPANY='",V.Caller.CompanyCode,"' ",V.Local.sSQL)
+'F.ODBC.Connection!conx.OpenRecordsetRO("rstEmp",V.Local.sSQL)
+
+'F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstEmp.EOF,=,True)
+'	Gui.Login.ddUser.AddItem(V.ODBC.conx!rstEmp.FieldValTrim!ID)
+'	F.ODBC.conx!rstEmp.MoveNext
+'F.Intrinsic.Control.Loop
+
+'F.ODBC.conx!rstEmp.Close
+
+Program.Sub.Main.End
+
+program.sub.login_unload.start
+F.Intrinsic.Control.End
+
+program.sub.login_unload.end
+
+program.sub.cmdlogin_click.start
+V.Local.bval.Declare(Boolean)
+V.Local.stemp.Declare(String)
+
+Gui.Login..Visible(false)
+
+F.Global.Security.validateuser(V.Screen.Login!txtUser.Text,V.Screen.Login!txtpassword.Text,V.Local.bval)
+
+f.Intrinsic.Control.If(V.Screen.Login!txtUser.Text.Trim,=,"")
+	V.Local.bval.Set(False)
+F.Intrinsic.Control.EndIf
+	V.Local.bval.Set(True)
+
+F.Intrinsic.Control.If(V.Local.bval,=,False)
+	F.Intrinsic.UI.Msgbox("Bad User or Password. (User is case sensitive.)","Login Error.")
+	Gui.Login..Visible(true)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+V.Global.User.Set(V.Screen.Login!txtuser.Text)
+
+Gui.Workcenter.lbluser.Caption(V.Global.User)
+Gui.Workcenter..Show
+
+
+
+F.ODBC.Connection!conx.OpenRecordsetRO("rstWC","Select * from V_WORKCENTERS  WHERE MACHINE NOT IN (SELECT WORKCENTER FROM ATG_3353_HiddenWCS) ORDER BY MACHINE")
+F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstWC.EOF,=,True)
+	F.Intrinsic.String.Concat(V.ODBC.conx!rstWC.FieldValTrim!MACHINE,"- ",V.ODBC.conx!rstWC.FieldValTrim!WC_NAME,V.Local.sTemp)
+	Gui.Workcenter.ddwc.AddItem(V.Local.stemp)
+
+	F.ODBC.conx!rstWC.MoveNext
+F.Intrinsic.Control.Loop
+
+F.ODBC.conx!rstWC.Close
+
+
+program.sub.cmdlogin_click.end
+
+program.sub.workcenter_unload.start
+f.Intrinsic.Control.End
+
+program.sub.workcenter_unload.end
+
+program.sub.cmdview_click.start
+V.Local.sWC.Declare(String)
+
+Gui.DNC.lblUser.Caption(V.Global.User)
+F.Intrinsic.String.Split(V.Screen.Workcenter!ddwc.Text,"-",V.Local.sWC)
+Gui.DNC.lblWC.Caption(V.Local.sWC(0).Trim)
+Gui.DNC..Show
+
+F.Intrinsic.Control.CallSub(Cmdreset_click)
+
+
+
+program.sub.cmdview_click.end
+
+program.sub.dnc_unload.start
+GUI.DNC..Visible(FALSE)
+
+program.sub.dnc_unload.end
+
+program.sub.dnc_resize.start
+V.Local.width.Declare(Long)
+V.Local.height.Declare(Long)
+
+V.Local.width.Set(V.Screen.DNC.Width)
+V.Local.height.Set(V.Screen.DNC.Height)
+
+F.Intrinsic.Math.Sub(V.Local.width,500,V.Local.width)
+F.Intrinsic.Math.Sub(V.Local.height,1600,V.Local.height)
+
+F.Intrinsic.Control.If(V.Local.width,<,14760)
+	V.Local.width.Set(14760)
+
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Local.HEIGHT,<,4575)
+	V.Local.HEIGHT.Set(4575)
+F.Intrinsic.Control.EndIf
+Gui.DNC.gsDNC.Size(V.Local.width,V.Local.height)
+
+
+
+program.sub.dnc_resize.end
+
+program.sub.cmdfind_click.start
+V.Local.sSQL.Declare(String)
+V.Local.sCol.Declare(String)
+V.Local.sWidth.Declare(String)
+V.Local.sFormat.Declare(String)
+
+V.Local.sret.Declare(String)
+V.Local.squery.Declare(String)
+V.Local.sWC.Declare(String)
+
+F.Intrinsic.String.Split(V.Screen.Workcenter!ddwc.Text,"-",V.Local.sWC)
+
+
+
+F.Intrinsic.String.Split("DNC NO*!*OPP*!*PROGRAM*!*CUSTNO*!*CUSTOMER*!*DRAWING_PART*!*DESCRIPTION*!*FILE_DATE*!*USERID","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("700*!*2000*!*2000*!*1000*!*2000*!*2000*!*2000*!*1000*!*1000","*!*",V.Local.swidth)
+'F.Intrinsic.String.Split("*!*00.0000","*!*",V.Local.sFormat)
+F.Intrinsic.String.Concat("SELECT DNC_NO,OPP,PROGRAM,CUSTNO,CUSTOMER,DRAWING_PART,DESCRIPTION,FILE_DATE,USERID FROM ATG_3353_BDNC WHERE WORKCENTER='",V.Screen.DNC!lblWC.Caption,"' ORDER BY DNC_NO",V.Local.squery)
+F.Intrinsic.UI.Browser("Select DNC Record","conx",V.Local.squery,V.Local.sCol,V.Local.sWidth,15000,5000,V.Local.sRet)
+
+
+
+
+
+
+
+
+F.Intrinsic.Control.If(V.Local.sret,<>,"***CANCEL***")
+	F.Intrinsic.string.Split(V.Local.sret,"*!*",V.Local.sret)
+
+	V.Local.rows.Declare(Long)
+
+	Gui.DNC..Enabled(FALSE)
+	Gui.DNC.gsDNC.Visible(false)
+
+	F.Intrinsic.String.Concat("Select DNC_NO,OPP,PROGRAM,CUSTNO,CUSTOMER,DRAWING_PART,DESCRIPTION,FILE_DATE,USERID from ATG_3353_BDNC where WORKCENTER='",V.Local.sWC(0),"' AND DNC_NO='",V.Local.sret(0),"'",V.Local.sSQL)
+	F.ODBC.Connection!conx.OpenRecordsetRO("rstDNC",V.Local.sSQL)
+
+
+	Gui.DNC.gsDNC.cOLs(10)
+
+	Gui.DNC.gsDNC.Rows(2)
+
+
+
+	Gui.DNC.gsDNC.BuildStyle(1,0,"fontstyle","bold",True)
+	Gui.DNC.gsDNC.BuildStyle(1,1,"fontstyle","bold",True)
+	Gui.DNC.gsDNC.BuildStyle(1,2,"fontstyle","bold",True)
+	Gui.DNC.gsDNC.BuildStyle(1,3,"fontstyle","bold",True)
+	Gui.DNC.gsDNC.BuildStyle(1,4,"fontstyle","bold",True)
+	Gui.DNC.gsDNC.BuildStyle(1,5,"fontstyle","bold",True)
+	Gui.DNC.gsDNC.BuildStyle(1,6,"fontstyle","bold",True)
+	Gui.DNC.gsDNC.BuildStyle(1,7,"fontstyle","bold",True)
+	Gui.DNC.gsDNC.BuildStyle(1,8,"fontstyle","bold",True)
+	Gui.DNC.gsDNC.BuildStyle(1,9,"fontstyle","bold",True)
+
+	Gui.DNC.gsDNC.ApplyStyle(0,1)
+
+
+
+	Gui.DNC.gsDNC.BuildStyle(2,0,"type","locked",True)
+	Gui.DNC.gsDNC.BuildStyle(2,1,"type","locked",True)
+	Gui.DNC.gsDNC.BuildStyle(2,2,"type","locked",True)
+	Gui.DNC.gsDNC.BuildStyle(2,3,"type","locked",True)
+	Gui.DNC.gsDNC.BuildStyle(2,4,"type","locked",True)
+	Gui.DNC.gsDNC.BuildStyle(2,5,"type","locked",True)
+	Gui.DNC.gsDNC.BuildStyle(2,6,"type","locked",True)
+	Gui.DNC.gsDNC.BuildStyle(2,7,"type","locked",True)
+	Gui.DNC.gsDNC.BuildStyle(2,8,"type","locked",True)
+	Gui.DNC.gsDNC.BuildStyle(2,9,"type","command","< Edit")
+
+
+	Gui.DNC.gsDNC.BuildStyle(3,0,"type","locked",False)
+	Gui.DNC.gsDNC.BuildStyle(3,1,"type","locked",False)
+	Gui.DNC.gsDNC.BuildStyle(3,2,"type","locked",False)
+	Gui.DNC.gsDNC.BuildStyle(3,3,"type","locked",False)
+	Gui.DNC.gsDNC.BuildStyle(3,4,"type","locked",False)
+	Gui.DNC.gsDNC.BuildStyle(3,5,"type","locked",False)
+	Gui.DNC.gsDNC.BuildStyle(3,6,"type","locked",False)
+	Gui.DNC.gsDNC.BuildStyle(3,7,"type","locked",False)
+	Gui.DNC.gsDNC.BuildStyle(3,8,"type","locked",False)
+	Gui.DNC.gsDNC.BuildStyle(3,9,"type","command","< Editing")
+
+
+	Gui.DNC.gsDNC.TextMatrix(0,0,"File No")
+	Gui.DNC.gsDNC.TextMatrix(1,0,"Opp")
+	Gui.DNC.gsDNC.TextMatrix(2,0,"Program")
+	Gui.DNC.gsDNC.TextMatrix(3,0,"CustNo")
+	Gui.DNC.gsDNC.TextMatrix(4,0,"Customer")
+	Gui.DNC.gsDNC.TextMatrix(5,0,"Drawing/Part")
+	Gui.DNC.gsDNC.ColWidth(5,2000)
+	Gui.DNC.gsDNC.TextMatrix(6,0,"Description")
+	Gui.DNC.gsDNC.ColWidth(6,2000)
+	Gui.DNC.gsDNC.TextMatrix(7,0,"Date")
+	Gui.DNC.gsDNC.TextMatrix(8,0,"UserID")
+
+
+	Gui.DNC.gsDNC.Rows(2)
+
+
+	Gui.DNC.gsDNC.FixedRows(1)
+	Gui.DNC..Enabled(TRUE)
+	Gui.DNC.gsDNC.LoadRecordset("conx!rstDNC",2)
+
+	F.Intrinsic.Math.Sub(V.Screen.DNC!gsDNC.Rows,1,V.Local.rows)
+	Gui.DNC.gsDNC.Rows(V.Local.rows)
+
+	F.ODBC.conx!rstDNC.Close
+	'gui.DNC.gsDNC.subclass(true)
+
+	'Gui.DNC.gsDNC.ApplyStyle(1,2)
+	Gui.DNC.gsDNC.Visible(true)
+
+F.Intrinsic.Control.EndIf
+
+program.sub.cmdfind_click.end
+
+program.sub.cmdnew_click.start
+V.Local.irows.Declare(Long)
+V.Local.sSQL.Declare(String)
+V.Local.iMax.Declare(Long)
+
+F.Intrinsic.Control.CallSub(Cmdclear_click)
+
+F.Intrinsic.String.Concat("SELECT MAX(DNC_NO) AS DNC_NO FROM ATG_3353_BDNC WHERE WORKCENTER='",V.Screen.DNC!lblWC.Caption,"' ",V.Local.sSQL)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstMAX",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conx!rstMAX.FieldValTrim!DNC_NO,<>,"")
+	F.Intrinsic.Math.Add(V.ODBC.conx!rstMAX.FieldValTrim!DNC_NO,1,V.Local.iMax)
+F.Intrinsic.Control.Else
+	V.Local.iMax.Set(1)
+F.Intrinsic.Control.EndIf
+F.ODBC.conx!rstMAX.Close
+
+Gui.EditDNC.lblFileno.Caption(V.Local.iMax)
+Gui.EditDNC.lblWC.Caption(V.Screen.DNC!lblWC.Caption)
+
+
+GUI.EditDNC..Show
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'	V.Local.iRows.Set(V.Screen.DNC!gsDNC.Rows)
+'	F.Intrinsic.Math.Add(V.Local.irows,1,V.Local.irows)
+'	Gui.DNC.gsDNC.Rows(V.Local.irows)
+'	F.Intrinsic.Math.sub(V.Local.irows,1,V.Local.irows)
+'	Gui.DNC.gsDNC.ApplyStyle(V.Local.irows,2)
+
+program.sub.cmdnew_click.end
+
+program.sub.cmdreset_click.start
+V.Local.rows.Declare(Long)
+V.Local.sSQL.Declare(String)
+V.Local.sWC.Declare(String)
+
+F.Intrinsic.String.Split(V.Screen.Workcenter!ddwc.Text,"-",V.Local.sWC)
+
+Gui.DNC..Enabled(FALSE)
+Gui.DNC.gsDNC.Visible(false)
+
+F.Intrinsic.String.Concat("Select top 50 DNC_NO,OPP,PROGRAM,CUSTNO,CUSTOMER,DRAWING_PART,DESCRIPTION,FILE_DATE,USERID from ATG_3353_BDNC where WORKCENTER='",V.Local.sWC(0).Trim,"' ORDER BY DNC_NO DESC",V.Local.sSQL)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstDNC",V.Local.sSQL)
+
+
+Gui.DNC.gsDNC.cOLs(10)
+
+Gui.DNC.gsDNC.Rows(2)
+
+
+
+Gui.DNC.gsDNC.BuildStyle(1,0,"fontstyle","bold",True)
+Gui.DNC.gsDNC.BuildStyle(1,1,"fontstyle","bold",True)
+Gui.DNC.gsDNC.BuildStyle(1,2,"fontstyle","bold",True)
+Gui.DNC.gsDNC.BuildStyle(1,3,"fontstyle","bold",True)
+Gui.DNC.gsDNC.BuildStyle(1,4,"fontstyle","bold",True)
+Gui.DNC.gsDNC.BuildStyle(1,5,"fontstyle","bold",True)
+Gui.DNC.gsDNC.BuildStyle(1,6,"fontstyle","bold",True)
+Gui.DNC.gsDNC.BuildStyle(1,7,"fontstyle","bold",True)
+Gui.DNC.gsDNC.BuildStyle(1,8,"fontstyle","bold",True)
+Gui.DNC.gsDNC.BuildStyle(1,9,"fontstyle","bold",True)
+
+Gui.DNC.gsDNC.ApplyStyle(0,1)
+
+
+
+Gui.DNC.gsDNC.BuildStyle(2,0,"type","locked",True)
+Gui.DNC.gsDNC.BuildStyle(2,1,"type","locked",True)
+Gui.DNC.gsDNC.BuildStyle(2,2,"type","locked",True)
+Gui.DNC.gsDNC.BuildStyle(2,3,"type","locked",True)
+Gui.DNC.gsDNC.BuildStyle(2,4,"type","locked",True)
+Gui.DNC.gsDNC.BuildStyle(2,5,"type","locked",True)
+Gui.DNC.gsDNC.BuildStyle(2,6,"type","locked",True)
+Gui.DNC.gsDNC.BuildStyle(2,7,"type","locked",True)
+Gui.DNC.gsDNC.BuildStyle(2,8,"type","locked",True)
+Gui.DNC.gsDNC.BuildStyle(2,9,"type","command","< Edit")
+
+Gui.DNC.gsDNC.BuildStyle(2,0,"Format","alignment",2)
+Gui.DNC.gsDNC.BuildStyle(2,1,"Format","alignment",2)
+Gui.DNC.gsDNC.BuildStyle(2,2,"Format","alignment",2)
+Gui.DNC.gsDNC.BuildStyle(2,3,"Format","alignment",2)
+Gui.DNC.gsDNC.BuildStyle(2,4,"Format","alignment",2)
+Gui.DNC.gsDNC.BuildStyle(2,5,"Format","alignment",2)
+Gui.DNC.gsDNC.BuildStyle(2,6,"Format","alignment",2)
+Gui.DNC.gsDNC.BuildStyle(2,7,"Format","alignment",2)
+Gui.DNC.gsDNC.BuildStyle(2,8,"Format","alignment",2)
+
+
+
+
+Gui.DNC.gsDNC.BuildStyle(3,0,"type","locked",False)
+Gui.DNC.gsDNC.BuildStyle(3,1,"type","locked",False)
+Gui.DNC.gsDNC.BuildStyle(3,2,"type","locked",False)
+Gui.DNC.gsDNC.BuildStyle(3,3,"type","locked",False)
+Gui.DNC.gsDNC.BuildStyle(3,4,"type","locked",False)
+Gui.DNC.gsDNC.BuildStyle(3,5,"type","locked",False)
+Gui.DNC.gsDNC.BuildStyle(3,6,"type","locked",False)
+Gui.DNC.gsDNC.BuildStyle(3,7,"type","locked",False)
+Gui.DNC.gsDNC.BuildStyle(3,8,"type","locked",False)
+Gui.DNC.gsDNC.BuildStyle(3,9,"type","command","< Editing")
+
+
+Gui.DNC.gsDNC.TextMatrix(0,0,"File No")
+Gui.DNC.gsDNC.TextMatrix(1,0,"Opp")
+Gui.DNC.gsDNC.TextMatrix(2,0,"Program")
+Gui.DNC.gsDNC.TextMatrix(3,0,"CustNo")
+Gui.DNC.gsDNC.TextMatrix(4,0,"Customer")
+Gui.DNC.gsDNC.ColWidth(4,2000)
+Gui.DNC.gsDNC.TextMatrix(5,0,"Drawing/Part")
+Gui.DNC.gsDNC.ColWidth(5,2000)
+Gui.DNC.gsDNC.TextMatrix(6,0,"Description")
+Gui.DNC.gsDNC.ColWidth(6,3000)
+Gui.DNC.gsDNC.TextMatrix(7,0,"Date")
+Gui.DNC.gsDNC.TextMatrix(8,0,"UserID")
+
+
+Gui.DNC.gsDNC.Rows(2)
+
+
+Gui.DNC.gsDNC.FixedRows(1)
+Gui.DNC..Enabled(TRUE)
+Gui.DNC.gsDNC.LoadRecordset("conx!rstDNC",2)
+
+F.Intrinsic.Math.Sub(V.Screen.DNC!gsDNC.Rows,1,V.Local.rows)
+Gui.DNC.gsDNC.Rows(V.Local.rows)
+
+F.ODBC.conx!rstDNC.Close
+
+Gui.DNC.gsDNC.Visible(true)
+
+
+program.sub.cmdreset_click.end
+
+Program.Sub.gsDNC_commandclick.Start
+V.Local.sCell.Declare(String)
+
+Gui.EditDNC.lblWC.Caption(V.Screen.DNC!lblWC.Caption)
+
+Gui.DNC.gsDNC.GetTextMatrix(0,V.Args.key,V.Local.sCell)
+Gui.EditDNC.lblFileno.Caption(V.Local.sCell)
+Gui.DNC.gsDNC.GetTextMatrix(1,V.Args.key,V.Local.sCell)
+Gui.EditDNC.txtOpp.Text(V.Local.sCell)
+Gui.DNC.gsDNC.GetTextMatrix(2,V.Args.key,V.Local.sCell)
+Gui.EditDNC.txtProgram.Text(V.Local.sCell)
+Gui.DNC.gsDNC.GetTextMatrix(3,V.Args.key,V.Local.sCell)
+Gui.EditDNC.txtCustNo.Text(V.Local.sCell)
+Gui.DNC.gsDNC.GetTextMatrix(4,V.Args.key,V.Local.sCell)
+Gui.EditDNC.txtCustomer.Text(V.Local.sCell)
+Gui.DNC.gsDNC.GetTextMatrix(5,V.Args.key,V.Local.sCell)
+Gui.EditDNC.txtPart.Text(V.Local.sCell)
+Gui.DNC.gsDNC.GetTextMatrix(6,V.Args.key,V.Local.sCell)
+Gui.EditDNC.txtDesc.Text(V.Local.sCell)
+
+
+
+
+
+Gui.EditDNC..Show
+
+Program.Sub.gsDNC_commandclick.End
+
+program.sub.cmdcust_click.start
+V.Local.sSQL.Declare(String)
+V.Local.sCol.Declare(String)
+V.Local.sWidth.Declare(String)
+V.Local.sFormat.Declare(String)
+
+V.Local.sret.Declare(String)
+V.Local.squery.Declare(String)
+
+F.Intrinsic.String.Split("CUSTOMER CODE*!*CUSTOMER NAME","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("2000*!*2000","*!*",V.Local.swidth)
+'F.Intrinsic.String.Split("*!*00.0000","*!*",V.Local.sFormat)
+V.Local.squery.Set("SELECT CUSTOMER, NAME_CUSTOMER FROM V_CUSTOMER_MASTER ORDER BY CUSTOMER")
+F.Intrinsic.UI.Browser("Select Customer Code","conx",V.Local.squery,V.Local.sCol,V.Local.sWidth,400,400,V.Local.sRet)
+
+
+F.Intrinsic.Control.If(V.Local.sret,<>,"***CANCEL***")
+	F.Intrinsic.string.Split(V.Local.sret,"*!*",V.Local.sret)
+	Gui.EditDNC.txtcustnO.Text(V.Local.sret(0))
+	Gui.EditDNC.txtcustOMER.Text(V.Local.sret(1))
+F.Intrinsic.Control.EndIf
+
+program.sub.cmdcust_click.end
+
+program.sub.cmdpart_click.start
+V.Local.sSQL.Declare(String)
+V.Local.sCol.Declare(String)
+V.Local.sWidth.Declare(String)
+V.Local.sFormat.Declare(String)
+
+V.Local.sret.Declare(String)
+V.Local.squery.Declare(String)
+
+F.Intrinsic.String.Split("PART*!*DESCRIPTION","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("2000*!*4000","*!*",V.Local.swidth)
+'F.Intrinsic.String.Split("*!*00.0000","*!*",V.Local.sFormat)
+V.Local.squery.Set("SELECT PART, DESCRIPTION FROM V_INVENTORY_MSTR ORDER BY PART")
+F.Intrinsic.UI.Browser("Select Part","conx",V.Local.squery,V.Local.sCol,V.Local.sWidth,400,400,V.Local.sRet)
+
+F.Intrinsic.Control.If(V.Local.sret,<>,"***CANCEL***")
+	F.Intrinsic.string.Split(V.Local.sret,"*!*",V.Local.sret)
+	Gui.EditDNC.txtPART.Text(V.Local.sret(0))
+	Gui.EditDNC.txtDESC.Text(V.Local.sret(1))
+F.Intrinsic.Control.EndIf
+
+program.sub.cmdpart_click.end
+
+program.sub.cmdsave_click.start
+V.Local.sSQL.Declare(String)
+
+F.Intrinsic.String.Concat("SELECT * FROM ATG_3353_BDNC WHERE DNC_NO='",V.Screen.EditDNC!lblFileno.Caption,"' AND WORKCENTER='",V.Screen.EditDNC!lblWC.Caption,"' ",V.Local.sSQL)
+
+F.ODBC.Connection!conx.OpenRecordsetRW("rstDNC",V.Local.sSQL)
+
+F.Intrinsic.Control.If(V.ODBC.conx!rstDNC.EOF,=,True)
+	F.ODBC.conx!rstDNC.AddNew
+	F.ODBC.conx!rstDNC.Set!WORKCENTER(V.Screen.EditDNC!lblWC.Caption)
+	F.ODBC.conx!rstDNC.Set!DNC_NO(V.Screen.EditDNC!lblFileno.Caption)
+F.Intrinsic.Control.EndIf
+
+
+F.ODBC.conx!rstDNC.Set!OPP(V.Screen.EditDNC!txtOpp.Text)
+F.ODBC.conx!rstDNC.Set!PROGRAM(V.Screen.EditDNC!txtProgram.Text)
+F.ODBC.conx!rstDNC.Set!CUSTNO(V.Screen.EditDNC!txtCustno.Text)
+F.ODBC.conx!rstDNC.Set!CUSTOMER(V.Screen.EditDNC!txtCustomer.Text)
+F.ODBC.conx!rstDNC.Set!DRAWING_PART(V.Screen.EditDNC!txtPart.Text)
+F.ODBC.conx!rstDNC.Set!DESCRIPTION(V.Screen.EditDNC!txtDesc.Text)
+F.ODBC.conx!rstDNC.Set!FILE_DATE(V.Ambient.Date)
+F.ODBC.conx!rstDNC.Set!USERID(V.Global.User)
+F.ODBC.conx!rstDNC.Update
+F.ODBC.conx!rstDNC.Close
+F.Intrinsic.Control.CallSub(Editdnc_unload)
+F.Intrinsic.Control.CallSub(Cmdreset_click)
+
+program.sub.cmdsave_click.end
+
+program.sub.cmdclear_click.start
+Gui.EditDNC.txtCustNo.Text("")
+Gui.EditDNC.txtDesc.Text("")
+Gui.EditDNC.txtOpp.Text("")
+Gui.EditDNC.txtPart.Text("")
+Gui.EditDNC.txtProgram.Text("")
+GUI.EditDNC.txtCustomer.Text("")
+
+program.sub.cmdclear_click.end
+
+program.sub.editdnc_unload.start
+F.Intrinsic.Control.CallSub(Cmdclear_click)
+gui.EditDNC..Visible(false)
+
+program.sub.editdnc_unload.end
+
+program.sub.txtpassword_keypress.start
+
+
+F.Intrinsic.Control.If(V.Args.KEYASCII,=,13)
+	F.Intrinsic.Control.CallSub(Cmdlogin_click)
+F.Intrinsic.Control.EndIf
+
+program.sub.txtpassword_keypress.end
+
+program.sub.cmddelete_click.start
+V.Local.sSQL.Declare(String)
+V.Local.return.Declare(Long)
+
+F.Intrinsic.UI.Msgbox("Are you sure you want to DELETE this record?","DELETE RECORD",4,V.Local.return)
+
+F.Intrinsic.Control.If(V.Local.return,=,7)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.CallSub(Cmdsave_click)
+
+F.Intrinsic.String.Concat("SELECT * FROM ATG_3353_BDNC WHERE DNC_NO='",V.Screen.EditDNC!lblFileno.Caption,"' AND WORKCENTER='",V.Screen.EditDNC!lblWC.Caption,"' ",V.Local.sSQL)
+
+F.ODBC.Connection!conx.OpenRecordsetRW("rstDNC",V.Local.sSQL)
+
+F.ODBC.conx!rstDNC.Delete
+F.ODBC.conx!rstDNC.Update
+F.ODBC.conx!rstDNC.Close
+
+
+
+F.Intrinsic.Control.CallSub(Cmdreset_click)
+
+program.sub.cmddelete_click.end
+
+
